@@ -188,7 +188,7 @@ nav{
 
 .section-1 form{
     margin-top: 5vh;
-    height: 90%;
+    max-height: 100%;
     width: 95%;
     border-radius: 10px;
     background-color:antiquewhite;
