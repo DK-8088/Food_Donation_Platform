@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- header -->
+    <header><h1>We share</h1></header>
+
+        <!-- side- bar -->
+    
+        <div id="side-bar" class="side-bar-show">
+            <h3>Notifications
+            <div class="bot-bar"></div>
+            </h3>
+            <ul id="notify-list">
+                <li class="notify-item"> new food request</li>
+            </ul>
+        </div>
+        
+    <!-- sections - container -->
+    
+    <section id="main-content">        <!-- starts -->
+         
+        <!-- section-1   ** donation **-->
+
+        <section  id="section-1" class="section-1">
+            
+            <form action="submit">
+                <h3>Try To Fill Hearts</h3>
+                <label for="name">name <span>*</span></label>
+                <input type="text" required class="tex">
+                <label for="org">organization name</label>
+                <input type="text" class="tex" placeholder="optional">
+                <label for="city">select city<span>*</span></label>
+                <select name="city" id="cities" class="tex">
+                    <option value="">select city</option>
+                    <option value="chennai">chennai</option>
+                    <option value="thanjavur">thanjavur</option>
+                </select>
+                <label for="mobile">contact no<span>*</span></label>
+                <input type="tel" required class="tex" value="+91 ">
+                <label for="food-title">Food-Title<span>*</span></label>
+                <input type="text" class="tex">
+                <label for="food-description">Food-description<span>*</span></label>
+                <textarea class="tex-area"></textarea>
+                <label for="address" >address<span>*</span></label>
+                <textarea class="tex-area"></textarea>
+                <label for="comments">comments</label>
+                <textarea class="tex-area" placeholder="optional"></textarea>
+                <button type="submit">post</button>
+            </form>
+        </section>
+
+        
+        <!-- section-2    ** home **-->
+        
+        <section id="section-2" class="section-2" >
+            <!-- banner  -->
+            <div class="banner">
+                <section>        
+                        <h3>Let's help needy</h3>
+                        <div>
+                            <p>your extra food can be <br>someone's hope</p>
+                        </div>
+                        <button onclick="show_donate_page()">Donate</button>
+                </section>
+                <img src="/images/banner_img.jpeg" alt="">
+            </div>
+        </section>
+        
+        
+        <!--   section-4   ** profile **-->
+
+        <section id="section-4" class="section-4">
+            <div class="profile-content">
+                <h3>Profile</h3>
+                <div class="profile-img"></div>
+                <h4>Profile-name</h4>
+                <div class="profile-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur</p>              
+                </div>
+            </div>
+        </section>
+        
+         <!-- section-3  ** receive **-->
+        
+        <section id="section-3" class="section-3" > 
+            <ul>
+                <h3>Active Donations</h3>
+                <li>
+                    <p>Food provider : <span>none</span></p>
+                    <p>Food Title : <span>none</span></p>
+                    <p>Contact no : <span>none</span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+                <li>
+                    <p>Food provider : <span></span></p>
+                    <p>Food Title : <span></span></p>
+                    <p>Contact no : <span></span></p>
+                    <summary >
+                        <details>
+                         <span>
+                            <label for="address">Address :</label>
+                            <p>501,7th street,thiruchur,thirunelveli</p>
+                         </span>
+                         <span>
+                            <label for="food Food-description">Food description:</label>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
+                         </span>
+                         <span>
+                            <label for="comments">Comments :</label>
+                            <p>none</p>
+                        </span>
+                        </details>
+                    </summary>
+                </li>
+            </ul>
+        </section>              
+     </section>                       <!-- ends -->
+        
+    <!-- nav-bar -->
+    
+    <nav>
+        <i class="fa-solid fa-bars" id="notify-btn"></i>
+        <i class="fa-solid fa-hand-holding-hand" id="donate-btn"></i>
+        <i class="fa-solid fa-house" id="home-btn"></i>
+        <i class="fa-solid fa-users-line" id="receive-btn"></i>
+        <i class="fa-solid fa-user" id="profile-btn"></i>
+    </nav>
+<script src="/script.js"></script>
+</body>
+</html>
