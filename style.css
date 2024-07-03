@@ -29,6 +29,20 @@ header{
     z-index: 6;
     box-shadow: 1px 1px 5px 1px rgb(0, 0, 0,0.2);
 }
+header img{
+    height: 4vh;
+    object-fit: contain;
+}
+header{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+header p{
+    font-weight: 600;
+    font-size: 120%;
+}
 /* side-bar-style */
 body{
     position: relative;
@@ -49,7 +63,9 @@ body{
     bottom:6vh;
     transition: 1s;
     position: fixed;
+    border: 5px solid antiquewhite;
 }
+
 .side-bar-show{
     left:-80vw;
     transition: 1s;
@@ -58,13 +74,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.bot-bar{
-    width:40vw;
-    height: 2px;
-    border: 1px solid white;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px 1px rgb(128, 128, 128,.8);
+    background-color: antiquewhite;
+    width: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
 }
 #notify-list{
     width: 100%;
@@ -75,9 +89,11 @@ body{
 }
 .notify-item{
     padding: 10px;
-    margin-left: 20px;
-    width: 100%;
+    margin-left:10px;
+    width: 95%;
+    border-radius: 8px;
     list-style:none;
+    background-color: antiquewhite;
 }
 /* nav-bar-style */
 nav{
@@ -105,28 +121,27 @@ nav{
 .section-1{
     background-color: white;
     width: 100%;
-    height: 125vh;
+    height: 145vh;
     position: absolute;
 }
 .section-2{
     background-color: white;
     width: 100%;
-    height: 125vh;
-    position: absolute;    
+    height: 150vh;
+    position: fixed;    
 }
 .section-3{
     background-color:white;
     width: 100%;
-    height: 125vh;
-    position: absolute;
-    overflow-y: scroll;
+    height: 100vh;
+    position:fixed;
  }
 
  .section-4{
     background-color:white;
     width: 100%;
-    height: 125vh;
-    position: absolute;
+    height: 100vh;
+    position:fixed;
  }
 
  /* section - 1 ****     banner   ****** */
@@ -187,11 +202,11 @@ nav{
 }
 
 .section-1 form{
-    margin-top: 5vh;
-    height: 100%;
+    margin-top: 2vh;
+    height: 90%;
     width: 95%;
     border-radius: 10px;
-    background-color:antiquewhite;
+    background-color:rgb(250, 235, 215,.6);
     box-shadow:1px 1px 5px 1px rgb(124, 128, 121);
     
     display: flex;
@@ -228,11 +243,11 @@ nav{
 
 .section-1 form button{
     width: 50%;
-    height:45px;
+    height: 5vh;
     background-color: rgb(0, 128, 0,.8);
     color: white;
     margin-top:5px;
-    margin-left: 100px;
+    margin-left: 24%;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 5px 1px grey;
@@ -251,20 +266,26 @@ nav{
 }
 
  .section-3 ul{
-    margin-top: 5vh;
+    margin-top: 2vh;
     width: 95%;
-    max-height: 500%;
+    max-height: 80%;
     border-radius: 10px;
-    background-color:antiquewhite;
-    box-shadow:1px 1px 5px 1px rgb(124, 128, 121);   
+    background-color:rgb(250, 235, 215,.8);
+    box-shadow:1px 1px 5px 1px rgb(124, 128, 121,.6);   
     display: flex;
     flex-direction: column;
     padding:40px 10px;
     gap:10px;
     position: relative;
-    
+    overflow-y: scroll;
+ }
+ .section-3 ul::-webkit-scrollbar{
+    display: none;
  }
 
+ .section-1 form::-webkit-scrollbar{
+    display: none;
+ }
 .section-3 h3{
     margin: 0 10px;
     box-shadow:1px 1px 5px 1px rgb(128, 128, 128,.5);
@@ -281,7 +302,7 @@ nav{
     font-weight: 600;
 }
 .section-3 ul li >p{
-    font-weight: 550;
+    font-weight:500;
 }
 .section-3 ul li{
     list-style: none;
@@ -293,7 +314,7 @@ nav{
     background-color: rgb(255, 255, 255);
 }
 .section-3 ul{
-    font-weight:600;
+    font-weight:500;
 }
 .section-3 summary{
     padding: 5px;
@@ -302,7 +323,7 @@ nav{
 }
 
 .section-3 summary details label{
-    font-weight:600;
+    font-weight:500;
 }
 .section-3 summary details span > p{
     width: 100;
@@ -311,9 +332,45 @@ nav{
 
 
 /* profile- page */
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+.profile-{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 .profile-img{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
-    background-color: red;
+    background-color:rgb(128, 128, 128,.3);
+}
+
+.profile-info{
+    width: 90%;
+    height: 40vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0,.2);
+    background-color: rgb(250, 235, 215,.6);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:20px;   
+}
+.profile-content a{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color:red;
+    text-shadow: 1px 1px 3px 1px grey;
+
+}
+.profile-{
+    padding: 10px;    
 }
