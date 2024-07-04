@@ -252,10 +252,19 @@ nav{
     border: none;
     box-shadow: 1px 1px 5px 1px grey;
 }
+
+#warning{
+    width: 80%;
+    height: 5vh;
+    color: red;
+    margin-top:5px;
+    margin-left: 24%;    
+}
+
 .section-1 form button:active{
     border: 2px solid ;
 }
-.section-1 >form span{
+.section-1 >form label>span{
     color: red;
 }
  /*receives - page  */
@@ -304,6 +313,9 @@ nav{
 .section-3 ul li >p{
     font-weight:500;
 }
+.section-3 ul li span{
+    margin-left: 15px;
+}
 .section-3 ul li{
     list-style: none;
     box-shadow:1px 1px 3px 1px rgb(124, 128, 121,.5);
@@ -324,9 +336,15 @@ nav{
 
 .section-3 summary details label{
     font-weight:500;
+    
 }
 .section-3 summary details span > p{
     width: 100;
+}
+
+.section-3 summary details{
+    display: flex;
+    flex-direction: column;
 }
 
 

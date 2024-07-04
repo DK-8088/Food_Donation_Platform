@@ -35,26 +35,27 @@
             <form action="submit">
                 <h3>Try To Fill Hearts</h3>
                 <label for="name">name <span>*</span></label>
-                <input type="text" required class="tex">
+                <input type="text" required class="tex" id="name">
                 <label for="org">organization name</label>
-                <input type="text" class="tex" placeholder="optional">
-                <label for="city">select city<span>*</span></label>
-                <select name="city" id="cities" class="tex">
+                <input type="text" class="tex" placeholder="optional" id="org_name">
+                <!--    <label for="city">select city<span>*</span></label>
+                    <select name="city" id="cities" class="tex">
                     <option value="">select city</option>
                     <option value="chennai">chennai</option>
                     <option value="thanjavur">thanjavur</option>
-                </select>
+                </select> -->
                 <label for="mobile">contact no<span>*</span></label>
-                <input type="tel" required class="tex" value="+91 ">
+                <input type="tel" required class="tex" value="+91 " id="mobile_no">
                 <label for="food-title">Food-Title<span>*</span></label>
-                <input type="text" class="tex">
+                <input type="text" class="tex" id="food_title">
                 <label for="food-description">Food-description<span>*</span></label>
-                <textarea class="tex-area"></textarea>
+                <textarea class="tex-area" id="food_desc"></textarea>
                 <label for="address" >address<span>*</span></label>
-                <textarea class="tex-area"></textarea>
+                <textarea class="tex-area" id="address"></textarea>
                 <label for="comments">comments</label>
-                <textarea class="tex-area" placeholder="optional"></textarea>
-                <button type="submit">post</button>
+                <textarea class="tex-area" id="comments" placeholder="optional"></textarea>
+                <button id="submit_btn" type="button" onclick="submit_info()">post</button>
+                <span id="warning">Fill All required feilds</span>
             </form>
         </section>
 
@@ -63,75 +64,12 @@
          <!-- section-3  ** receive **-->
         
          <section id="section-3" class="section-3" > 
-            <ul>
+            <ul id="food_list">
                 <h3>Active Donations</h3>
                 <li>
-                    <p>Food provider : <span>none</span></p>
-                    <p>Food Title : <span>none</span></p>
-                    <p>Contact no : <span>none</span></p>
-                    <summary >
-                        <details>
-                         <span>
-                            <label for="address">Address :</label>
-                            <p>501,7th street,thiruchur,thirunelveli</p>
-                         </span>
-                         <span>
-                            <label for="food Food-description">Food description:</label>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
-                         </span>
-                         <span>
-                            <label for="comments">Comments :</label>
-                            <p>none</p>
-                        </span>
-                        </details>
-                    </summary>
-                </li>
-                <li>
-                    <p>Food provider : <span></span></p>
-                    <p>Food Title : <span></span></p>
-                    <p>Contact no : <span></span></p>
-                    <summary >
-                        <details>
-                         <span>
-                            <label for="address">Address :</label>
-                            <p>501,7th street,thiruchur,thirunelveli</p>
-                         </span>
-                         <span>
-                            <label for="food Food-description">Food description:</label>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
-                         </span>
-                         <span>
-                            <label for="comments">Comments :</label>
-                            <p>none</p>
-                        </span>
-                        </details>
-                    </summary>
-                </li>
-                <li>
-                    <p>Food provider : <span></span></p>
-                    <p>Food Title : <span></span></p>
-                    <p>Contact no : <span></span></p>
-                    <summary >
-                        <details>
-                         <span>
-                            <label for="address">Address :</label>
-                            <p>501,7th street,thiruchur,thirunelveli</p>
-                         </span>
-                         <span>
-                            <label for="food Food-description">Food description:</label>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum expedita sint ut optio! Quod inve</p>
-                         </span>
-                         <span>
-                            <label for="comments">Comments :</label>
-                            <p>none</p>
-                        </span>
-                        </details>
-                    </summary>
-                </li>
-                <li>
-                    <p>Food provider : <span></span></p>
-                    <p>Food Title : <span></span></p>
-                    <p>Contact no : <span></span></p>
+                    <p>Food provider : <span>Gokul</span></p>
+                    <p>Food Title : <span>Meals</span></p>
+                    <p>Contact no : <span>987654321</span></p>
                     <summary >
                         <details>
                          <span>
