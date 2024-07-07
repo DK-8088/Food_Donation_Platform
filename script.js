@@ -104,7 +104,15 @@ function submit_info(){
         
         show_receive_page()
         setTimeout(clear_form(),20000)
- }
+
+        var notify_ul=document.getElementById("notify-list")
+        var notify_item = document.createElement('li')
+        notify_item.textContent=Name +" "+"posted new donation"
+        notify_ul.appendChild(notify_item)
+
+        document.getElementById('ico').style.visibility="visible"
+        setTimeout(()=>{document.getElementById('ico').style.visibility="hidden"},10000)
+    }
  else{
     w_sp.style.visibility="visible"
     setTimeout(()=>{w_sp.style.visibility="hidden"},1000)
