@@ -111,7 +111,7 @@ function submit_info(){
         notify_ul.appendChild(notify_item)
 
         document.getElementById('ico').style.visibility="visible"
-        setTimeout(()=>{document.getElementById('ico').style.visibility="hidden"},10000)
+        
     }
  else{
     w_sp.style.visibility="visible"
@@ -169,5 +169,5 @@ profile_btn.addEventListener('click',()=>{
 //showo-side-bar
 notify_btn.addEventListener('click',()=>{
     side_bar.classList.toggle('side-bar-show');
-    
+    document.getElementById('ico').style.visibility="hidden"
 })

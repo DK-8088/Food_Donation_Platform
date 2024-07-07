@@ -420,23 +420,24 @@ nav{
     margin: auto;
 
 }
-.banner-2 p{
-    margin: 20px 0;
-}
 .banner-2 button{
     width: 50%;
-    margin: 10px 0;
-    border-radius: 8px;
+    background-color:blanchedalmond;
+    padding: 2px;
+    border-radius: 6px;
     border: none;
-    background-color: antiquewhite;
-    height:  30px;
     box-shadow: 1px 1px 5px 1px rgb(128, 128, 128,.5);
+}
+.banner-2 p{
+    margin: 10px 0;
 }
 
 .banner-2 section{
-border-radius: 5px;
-padding: 5px;
+border-radius: 8px;
+padding: 10px;
 width: 100%;
+border: none;
+box-shadow:1px 1px 5px 1px rgb(128, 128, 128,.5);
 }
 
 .banner-2 h1{
